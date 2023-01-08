@@ -57,30 +57,4 @@ def single_pass_sort(arr)
     arr
 end
 
-
-def test(arr)
-    loop do
-        index_for_A = 0
-        index_for_B = 1
-    
-        while (index_for_B < arr.length)
-            a = arr[index_for_A]
-            b = arr[index_for_B]
-        
-            if ((a - b) >= 0)
-                arr[index_for_A] = b;
-                arr[index_for_B] = a;
-            end
-        
-            index_for_A += 1
-            index_for_B += 1
-        end
-        break if (array_is_sorted?(arr) == true)
-         
-        p arr
-
-        
-    end
-end
-
 p bubble_sort([4,3,78,2,0,2])
